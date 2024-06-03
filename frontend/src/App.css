@@ -25,6 +25,7 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  
 }
 nav::after {
   content: "";
@@ -40,6 +41,7 @@ nav .logo {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  
 }
 nav .navLinks {
   flex: 2;
@@ -55,27 +57,28 @@ nav .navLinks .links {
 }
 nav .navLinks .links a {
   text-decoration: none;
-  color: #555;
+  color:rgb(222, 217, 217);
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1.4px;
+
 }
 nav .navLinks .links a:hover {
-  color: #222;
+  color:white;
   transition: 0.3s;
   cursor: pointer;
 }
 nav .menuBtn {
   padding: 8px 20px;
-  color: black;
+  color: gainsboro;
   background: transparent;
-  border: 1px solid #333;
+  border: 1px solid gray;
   border-radius: 20px;
   font-size: 16px;
 }
 nav .menuBtn:hover {
-  color: #fff;
-  background: #222;
+  color: gray;
+  background: #fff;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -159,15 +162,18 @@ nav svg {
 /**********************************************************************************************************************/
 .heroSection {
   display: flex;
+  
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
-  background: url(/background.svg);
+  background: linear-gradient(270deg, #3f2929, #9b89898a);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  padding: 0 15px;
+  padding: 0 15px 60px;
+  color:white;
+
 }
 .heroSection .container {
   display: flex;
@@ -193,6 +199,8 @@ nav svg {
 .heroSection .container .banner .textAndLogo {
   width: 50%;
 }
+
+
 .heroSection .container .banner .textWithSvg {
   position: relative;
 }
@@ -213,6 +221,8 @@ nav svg {
 .heroSection .container .banner .imageBox img {
   width: 300px;
   height: 385px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .heroSection .container .banner:last-child .imageBox {
   text-align: end;
@@ -331,7 +341,7 @@ nav svg {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #f9fbf2;
+  background: linear-gradient(270deg, #3f2929, #9b89898a);
 }
 .about .container {
   max-width: 1500px;
@@ -346,9 +356,12 @@ nav svg {
 }
 .about .container .banner img {
   width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
 }
 .heading {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 4rem;
   color: #111;
 }
@@ -515,6 +528,9 @@ nav svg {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  
+  background: linear-gradient(270deg, #3f2929, #9b89898a);
+
 }
 .menu .container {
   max-width: 1500px;
@@ -532,20 +548,36 @@ nav svg {
   font-size: 18px;
   font-weight: 300;
 }
-.menu .container .dishes_container {
+
+.menu .container  .dishes_container {
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
-.menu .container .dishes_container .card {
-  width: 25%;
+.menu .container .head_cat{
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.menu .container  .dishes_container .card {
+  background-color: rgb(203, 199, 199);
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
   position: relative;
   padding: 20px 12.5px;
   margin-bottom: 12px;
-  position: relative;
+  cursor: pointer;
 }
-.menu .container .dishes_container .card img {
+.menu .container  .dishes_container .card img {
   width: 100%;
-  height: 370px;
+  height: 60%;
+  border-radius: 20px;
 }
 .menu .container .dishes_container .card h3 {
   font-size: 1.5rem;

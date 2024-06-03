@@ -46,7 +46,7 @@ const navigate= useNavigate();
   return (
     <>
       <nav>
-        <div className="logo"><Link to={'/'} style={{textDecoration:"none", color:"black"}}>ZEESH</Link></div>
+        <div className="logo"><Link to={'/'} style={{textDecoration:"none", color:"black"}}>Rudrani</Link></div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             {data[0].navbarLinks.map((element) => (

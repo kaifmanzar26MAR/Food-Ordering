@@ -29,7 +29,7 @@ const About = () => {
             </Link>
           </div>
           <div className="banner">
-            <img src="about.png" alt="about" />
+            <img src="https://cdn.magicdecor.in/com/2023/11/15105441/Fast-Food-Coffee-Restaurant-Chalkboard-Design-Wallpaper-for-Wall.jpg" alt="about" />
           </div>
         </div>
       </section>
