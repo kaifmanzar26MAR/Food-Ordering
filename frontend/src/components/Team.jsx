@@ -13,15 +13,29 @@ const Team = () => {
           </p>
         </div>
         <div className="team_container">
-          {data[0].team.map((element) => {
-            return (
-              <div className="card" key={element.id}>
-                <img src={element.image} alt={element.name} />
-                <h3>{element.name}</h3>
-                <p>{element.designation}</p>
+          
+              <div className="card" >
+                <img src='Rudrani.jpg' alt={"img"} />
+                <h3>{"Rudrani"}</h3>
+                <p>{"Back-End Developer"}</p>
               </div>
-            );
-          })}
+
+
+              <div className="card" >
+                <img src='vikrant pic.jpg' alt={"img"} />
+                <h3>{"Vikrant"}</h3>
+                <p>{"Marketting Manager"}</p>
+              </div>
+
+
+
+              <div className="card" >
+                <img src='my pic2.jpg' alt={"img"} />
+                <h3>{"Rahul Layak"}</h3>
+                <p>{"Front-End Developer"}</p>
+              </div>
+             
+            
         </div>
       </div>
     </section>

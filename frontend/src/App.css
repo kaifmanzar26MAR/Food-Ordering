@@ -612,17 +612,23 @@ nav svg {
   }
 }
 @media (max-width: 1000px) {
+  .menu .container .dishes_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .menu .container .dishes_container .card {
-    width: 50%;
+    width: 70%;
   }
   .menu .container .dishes_container .card img {
-    height: auto;
+    height: 50%;
   }
   .menu .container .dishes_container .card h3 {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 600px) {
+  
   .menu .container .dishes_container .card h3 {
     font-size: 1.2rem;
   }
@@ -665,6 +671,8 @@ nav svg {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .team .container .team_container .card {
   width: 25%;
@@ -675,8 +683,12 @@ nav svg {
   align-items: center;
 }
 .team .container .team_container .card img {
-  width: 175px;
+  width: 200px;
+  height: 200px;
   margin-bottom: 1rem;
+  border-radius: 50% 50%;
+  object-fit: cover;
+  object-position: center;
 }
 .team .container .team_container .card h3 {
   font-size: 1.5rem;
@@ -726,6 +738,9 @@ nav svg {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+  
+  
+  background: linear-gradient(270deg, #3f2929, #9b89898a);
 }
 .who_are_we .container {
   max-width: 1500px;
@@ -746,7 +761,7 @@ nav svg {
   justify-content: center;
 }
 .who_are_we .container .text_banner .card p {
-  color: #333;
+  color: #fff;
   font-size: 25px;
   font-weight: 200;
 }

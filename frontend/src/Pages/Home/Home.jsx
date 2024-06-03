@@ -18,7 +18,6 @@ const Home = () => {
       <Menu/>
       <WhoAreWe/>
       <Team/>
-      <Reservation/>
       <Footer/>
     </div>
   )
