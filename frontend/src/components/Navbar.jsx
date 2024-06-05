@@ -70,18 +70,16 @@ const navigate= useNavigate();
               gap: "20px",
             }}
           >
-            {islogin ? <button className="menuBtn"><Link to={'/mybookings'} style={{textDecoration:"none", color:"black"}}>My Bookings</Link></button> : ""}
+            {islogin ? <button className="menuBtn"><Link to={'/cart'} style={{textDecoration:"none", color:"white"}}>My Cart</Link></button> : ""}
             {!islogin ? "" : <button className="menuBtn" onClick={handleLogout}>Logout</button>}
 
             {islogin ? (
-              <Link to={'/aboutuser'} style={{textDecoration:"none", color:"black"}}><FaCircleUser style={{ cursor: "pointer" }} size={35} /></Link>
+              <Link to={'/aboutuser'} style={{textDecoration:"none", color:"white"}}><FaCircleUser style={{ cursor: "pointer" }} size={35} /></Link>
             ) : (
               <Link to="/login">
                 <button className="menuBtn">Login</button>
               </Link>
-            )} <Link to="/cart">
-                <button className="menuBtn">cart</button>
-              </Link>
+            )} 
           </div>
          
             

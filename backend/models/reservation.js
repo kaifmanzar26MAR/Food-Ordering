@@ -6,15 +6,28 @@ const reservationSchema = new mongoose.Schema({
     type:mongoose.Schema.Types.ObjectId,
     ref:"User"
   },
-  date_of_event:{
+  id:{
     type:Number,
     required:true
   },
-  time_of_event:{
-    type:Number,
+  title:{
+    type:String,
     required:true
   },
-  number_of_member:{
+  image:{
+    type:String,
+    required:true,
+  },
+  price:{
+    type:Number,
+    required:true,
+    default:100
+  },
+  category:{
+    type:String,
+    required:true
+  },
+  quantity:{
     type:Number,
     required:true,
     default:1

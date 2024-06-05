@@ -1,10 +1,38 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../cartContest';
 import { data } from '../restApi.json';
 import toast from 'react-hot-toast';
+import axios from 'axios';
 
 const Menu = () => {
   const { addToCart } = useContext(CartContext);
+
+  
+
+  const handleReservation = async (element) => {
+    console.log(element)
+
+    try {
+      const res  = await axios.post(
+        "http://localhost:5000/api/v1/reservation/createreservation",
+        {element},
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+        }
+      );
+      console.log(res.data)
+      toast.success(res.data.message);
+      
+    } catch (error) {
+      console.log(error)
+      toast.error(error.response.data.message+ "!. OR Please Login!!");
+
+    }
+  };
+
 
   return (
     <>
@@ -22,7 +50,7 @@ const Menu = () => {
                   <h3>{element.title}</h3>
                   {/* <button>{element.category}</button> */}
                   <button onClick={() => {
-                    addToCart(element)
+                    handleReservation(element)
                     toast.success("Added To Cart")
                   }}>Add to cart</button>
                 </div>

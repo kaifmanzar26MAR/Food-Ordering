@@ -74,6 +74,7 @@ const Login = () => {
   };
   return (
     <div className='body'>
+        <div style={{display:"fixed", top:"20px", padding:"5px", backgroundColor:"#512da8", color:"white", borderRadius:"5px", margin:"10px", cursor:"pointer"}} onClick={()=>navigate('/')}>Home</div>
         <div class={`login-container ${isRightPanelActive?'active':''} `} id="container">
         <div class="form-container sign-up">
             <form onSubmit={handleRegister}>
