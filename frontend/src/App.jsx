@@ -5,9 +5,11 @@ import Home from "./Pages/Home/Home";
 import NotFound from "./Pages/NotFound/NotFound";
 import Success from "./Pages/Success/Success";
 import "./App.css";
-import Login from "./Pages/Login";
+import Login from "./Pages/login/Login";
 import UserAbout from "./Pages/UserAbout";
 import MyBookings from "./Pages/MyBookings";
+import { CartProvider } from "./cartContest";
+import Cart from "./Pages/cart";
 const App = () => {
   const [scrollY, setScrollY] = useState(window.scrollY);
 
@@ -49,10 +51,12 @@ const App = () => {
   }, [scrollY]);
   return (
     <>
-    <div id="top" onClick={()=>{window.scrollTo({top:0})}}>TOP</div>
+      <div id="top" onClick={() => { window.scrollTo({ top: 0 }) }}>TOP</div>
+      <CartProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/success" element={<Success />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
@@ -60,7 +64,8 @@ const App = () => {
           <Route path="/mybookings" element={<MyBookings />} />
         </Routes>
         <Toaster />
-      </Router>
+        </Router>
+      </CartProvider>
     </>
   );
 };

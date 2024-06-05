@@ -79,8 +79,13 @@ const navigate= useNavigate();
               <Link to="/login">
                 <button className="menuBtn">Login</button>
               </Link>
-            )}
+            )} <Link to="/cart">
+                <button className="menuBtn">cart</button>
+              </Link>
           </div>
+         
+            
+          
         </div>
         <div className="hamburger" onClick={() => setShow(!show)}>
           <GiHamburgerMenu />

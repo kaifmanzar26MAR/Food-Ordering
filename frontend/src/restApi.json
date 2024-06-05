@@ -25,75 +25,77 @@
                 "id": 1,
                 "image": "./dinner1.jpeg",
                 "title": "ROASTED LAMB RUMP",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":450.00
             },
             {
                 "id": 2,
                 "image": "./dinner2.png",
                 "title": "CITRUS CURED SALMON",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":550.00
             },
             {
                 "id": 3,
                 "image": "./breakfast1.png",
                 "title": "PAN SEARED SEA BASS",
-                "category": "Breakfast"
+                "category": "Breakfast",
+                "price":650.00
             },
             {
                 "id": 4,
                 "image": "./dinner3.png",
                 "title": "STUFFED STRAWBERRY",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":300.00
             },
             {
                 "id": 5,
                 "image": "./lunch1.png",
                 "title": "BEEF BURGER MEAL",
-                "category": "Lunch"
+                "category": "Lunch",
+                "price":500.00
             },
             {
                 "id": 6,
                 "image": "./dinner4.png",
                 "title": "MUSSELS SOUP",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":550.00
             },
             {
                 "id": 7,
                 "image": "./dinner5.png",
                 "title": "ITALIAN SPAGHETTI",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":350.00
             },
             {
                 "id": 8,
                 "image": "./dinner6.png",
                 "title": "GRILLED FISH",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price":400.00
             }
         ],
         "team": [
             {
                 "id": 1,
-                "image": "./team_member_1.png",
-                "name": "JOHNATHAN TYLER",
-                "designation": "Founder & Head Chef"
+                "image": "./Rudrani.jpg",
+                "name": "Rudrani Ghosh",
+                "designation": "Backend Developer,Problem solver"
             },
             {
                 "id": 2,
-                "image": "./team_member_2.png",
-                "name": "WADE WARREN",
-                "designation": "Sous Chef"
+                "image": "./my pic2.jpg",
+                "name": "Rahul Layek",
+                "designation": "Front End Developer & Designer."
             },
             {
                 "id": 3,
-                "image": "./team_member_3.png",
-                "name": "JHON DOE",
-                "designation": "Fast Food Chef"
-            },
-            {
-                "id": 4,
-                "image": "./team_member_4.png",
-                "name": "ALEX COAL",
-                "designation": "Senior Chef"
+                "image": "./vikrant pic.jpg",
+                "name": "Vikrant Kumar Singh",
+                "designation": "Marketing Manager"
             }
         ],
         "testimonials": [
@@ -161,11 +163,6 @@
                 "id": 4,
                 "title": "TEAM",
                 "link": "#team"
-            },
-            {
-                "id": 5,
-                "title": "RESERVATION",
-                "link": "#reservation"
             }
         ]
     
